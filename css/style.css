@@ -1,0 +1,132 @@
+:root {
+    --fuentePrincipal: 'Roboto', sans-serif;
+    --fuenteSecundario: 'Lato', sans-serif;
+    --primario: #1073ba;
+    --secundario: #00da55;
+    --gris: #3b3b3b;
+    --blanco: #ffffff;
+    --negro: #1f1e1e;
+    --grisClaro: #e1e1e1;
+    --separacion: 5rem;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/*globales*/
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fuenteSecundario);
+    font-weight: 900;
+    margin: calc( var(--separacion) / 2 ) 0;
+}
+
+h1 {
+    font-size: 4.4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*utilidades*/
+.text-center {
+    text-align: center;
+}
+
+.degradado {
+    color: transparent;
+    background: linear-gradient( to right, var(--primario) 0%, var(--secundario) 100% );
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+/*header*/
+.header {
+    background-color: var(--negro);
+    padding: var(--separacion) 0;
+    color: var(--blanco);
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .header-contenido {
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr );
+        gap: 4rem
+    }
+}
+
+.header-text {
+    text-align: center;
+    padding-top: var(--separacion);
+}
+@media (min-width: 768px) {
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.header-text p {
+    margin: 0;
+}
+
+.tagline-titulo {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.titulo-producto {
+    font-size: 6rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .titulo-producto {
+        font-size: 10rem;
+        line-height: 1;
+    }
+}
+.precio-producto span {
+    font-size: 6rem;
+    font-weight: 900;
+}
