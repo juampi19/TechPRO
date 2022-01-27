@@ -15,12 +15,14 @@
 
     <header class="header">
         <div class="header-contenido contenedor">
-            <picture>
-                <source srcset="img/header.avif" type="image/avif">
-                <source srcset="img/header.webp" type="image/webp">
-                <img width="500" height="300" loading="lazy" src="img/header.png" alt="Imagen header">
-            </picture>
-            
+            <div class="imangen-header">
+                <picture>
+                    <source srcset="img/header.avif" type="image/avif">
+                    <source srcset="img/header.webp" type="image/webp">
+                    <img width="500" height="300" loading="lazy" src="img/header.png" alt="Imagen header">
+                </picture>
+            </div>
+
             <div class="header-text">
                 <p class="tagline-titulo">Sonido Profesional</p>
                 <h1 class="titulo-producto degradado">TechPRO</h1>
@@ -29,6 +31,81 @@
             </div>
         </div><!--contenido header-->
     </header>
+
+    <section class="contenedor seccion-iconos">
+        <div class="iconos-contenedor">
+            <div class="icono">
+                <img src="img/icono-sonido.svg" alt="imagen iconos">
+                <h3>Gran Sonido</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sit illum ea quasi distinctio omnis eius maiores ducimus.</p>
+            </div><!--icono-->
+
+            <div class="icono">
+                <img src="img/icono-garantia.svg" alt="imagen iconos">
+                <h3>Garantia de por vida</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sit illum ea quasi distinctio omnis eius maiores ducimus.</p>
+            </div><!--icono-->
+
+            <div class="icono">
+                <img src="img/icono-bateria.svg" alt="imagen iconos">
+                <h3>+20 horas de bateria</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sit illum ea quasi distinctio omnis eius maiores ducimus.</p>
+            </div><!--icono-->
+            
+        </div><!--Iconos contenedor-->
+    </section>
+
+    <section class="sobre-tech">
+        <div class="sobre-contenedor contenedor">
+            <div class="sobre-texto">
+                <h2>Sobre los TechPRO</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quidem vitae culpa voluptatibus iure officiis. Libero, tenetur maxime pariatur laboriosam laborum optio possimus dignissimos accusamus saepe eos!</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="contenedor productos">
+        <h2 class="text-center degradado">Elige tu techPRO</h2>
+        <div class="productos-contenedor">
+
+            <div class="producto modelo-x">
+                <h3 class="nombre-producto">Tech <span>PRO X</span></h3>
+                <P class="precio-producto">$299</P>
+            </div><!--producto-->
+
+            <div class="producto modelo-y">
+                <h3 class="nombre-producto">Tech <span>PRO Y</span></h3>
+                <P class="precio-producto">$399</P>
+            </div><!--producto-->
+
+            <div class="producto modelo-z">
+                <h3 class="nombre-producto">Tech <span>PRO Z</span></h3>
+                <P class="precio-producto">$499</P>
+            </div><!--producto-->
+            
+        </div><!--Productos-->
+    </main>
+
+    <section class="newsletter">
+        <div class="newsletter-contenedor contenedor">
+            
+            <div class="newsletter-texto">
+                <h2>Recibe Actualizaciones</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quibusdam ducimus. Alias beatae, delectus cumque at porro ut ratione tempore, earum, omnis neque ducimus ipsam?</p>
+
+                <form class="formulario">
+                    <div class="campos">
+                        <input type="text" placeholder="Tu e-mail">
+                    </div>
+                    <input type="submit" value="Inscribirme">
+                </form>
+            </div>
+        </div><!--contenido newsletter-->
+    </section>
+
+    <footer class="footer text-center"> 
+        <p>Todos los Derechos Reservados &copy;</p>
+    </footer>
 
 </body>
 </html>
